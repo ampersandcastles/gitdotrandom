@@ -35,7 +35,7 @@ def get_random_repo(language=None):
     
 def main():
     # prompt user to enter a programming language (optional)
-    language = input("Enter a programming language: ").strip()
+    language = input("Enter a programming language (leave blank for random): ").strip()
 
     repo = get_random_repo(language=language if language else None)
     if repo:
